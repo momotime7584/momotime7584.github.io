@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤러리 이름</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        .artwork {
+            margin: 1rem 0;
+            max-width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+        }
+        .artwork img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .play-audio {
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            display: block;
+            border-radius: 0 0 10px 10px;
+            font-size: 1rem;
+        }
+        .play-audio:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>갤러리 이름</header>
+    <div class="gallery">
+        <!-- Example Artwork 1 -->
+        <div class="artwork">
+            <img src="artwork1.jpg" alt="Artwork 1">
+            <a class="play-audio" href="audio1.mp3" target="_blank">작품 1 설명 듣기</a>
+        </div>
+        <!-- Example Artwork 2 -->
+        <div class="artwork">
+            <img src="artwork2.jpg" alt="Artwork 2">
+            <a class="play-audio" href="audio2.mp3" target="_blank">작품 2 설명 듣기</a>
+        </div>
+        <!-- Add more artwork as needed -->
+    </div>
+</body>
+</html>
